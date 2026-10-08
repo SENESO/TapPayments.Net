@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>The missing .NET SDK for Tap Payments — the MENA payment gateway. Charges, authorizations, refunds, customers, tokens, invoices, and HMAC webhook validation.</Description>
+    <AssemblyTitle>TapPayments.Net</AssemblyTitle>
+    <Authors>Eslam Ashraf;Github Contributors</Authors>
+    <PackageTags>tap;payments;mena;gateway;sdk;gcc;egypt;saudi</PackageTags>
+    <TargetFrameworks>netstandard2.0;net8.0</TargetFrameworks>
+    <Version>1.0.0</Version>
+    <PackageId>TapPayments.Net</PackageId>
+    <RootNamespace>TapPayments</RootNamespace>
+    <LangVersion>latest</LangVersion>
+    <Nullable>disable</Nullable>
+    <RepositoryUrl>https://github.com/SENESO/TapPayments.Net</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/SENESO/TapPayments.Net</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="8.0.5" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="../../README.md" Pack="true" PackagePath="README.md" />
+  </ItemGroup>
+
+</Project>
